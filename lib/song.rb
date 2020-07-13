@@ -23,6 +23,7 @@ class Song
       if !genres_no_repeats.include?(genre)
         genres_no_repeats << genre
       end
+    end
     genres_no_repeats
   end
 
@@ -32,6 +33,7 @@ class Song
       if !artists_no_repeats.include?(artist)
         artists_no_repeats << artist
       end
+    end
     artists_no_repeats
   end
 
