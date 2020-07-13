@@ -8,8 +8,12 @@ class Song
   end
 
   def self.genres
+    genres_no_repeats = []
     @@genres.each do |genre|
-      if genre
+      if !genres_no_repeats.include?(genre)
+        genres_no_repeats << genre
+      end
+    genres_no_repeats
   end
 
   def initialize(name, artist, genre)
